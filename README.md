@@ -1,2 +1,2 @@
-# Dairy-Creative-Coading
-#DairyCoading #CreativeCoading #p5js
+# Dairy-Creative-Coding
+#DairyCoding #CreativeCoding #p5js
