@@ -1,0 +1,31 @@
+let r0 = 100;
+let angle = 0;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+
+}
+
+function draw() {
+  background(255);
+  push();
+  translate(width / 2, height / 2);
+  ellipse(0, 0, r0 * 2, r0 * 2);
+  pop();
+  movingCircle(100, width / 2, height / 2);
+  movingCircle(100, x1, y1);
+}
+
+function movingCircle(r, centerX, centerY){
+  push();
+  translate(centerX, centerY);
+  x = sin(radians(angle)) * r;
+  y = cos(radians(angle)) * r;
+  fill(255,255,255,0);
+  ellipse(x, y, r * 2, r * 2);
+  pop();
+  angle += 1;
+  x1 = x;
+  y1 = y;
+  return x1, y1;
+}
